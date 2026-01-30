@@ -1,0 +1,4 @@
+def test_assignment():
+    student_result = engine.execute("SELECT * FROM Orders WHERE Amount > 500")
+    expected_result = [(1, 'Apple', 1000), (3, 'Banana', 600)]
+    assert student_result == expected_result # 如果不符，GitHub Actions 會顯示紅燈
