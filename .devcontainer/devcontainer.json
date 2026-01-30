@@ -1,0 +1,11 @@
+{
+  "name": "SQL Homework",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "db",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-mssql.mssql"]
+    }
+  },
+  "postCreateCommand": "sh ./setup_db.sh" 
+}
